@@ -78,6 +78,7 @@ func main() {
 			}
 
 			fmt.Printf("%s\n", result.Message)
+			fmt.Printf("%s\n", result.ScanId)
 
 			if *debug {
 				fmt.Println(result)
