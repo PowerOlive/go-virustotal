@@ -9,17 +9,21 @@ VirusTotal public api interface implementation in Golang.
 Usage
 =====
 
+```
+go get github.com/getlantern/go-virustotal
+```
+
 You can also set the environment variable VIRUSTOTAL_APIKEY to the api key.
 
 ```
-go run ./bin/vt.go --apikey {key} (--debug) scan {file} {file} ...
-go run ./bin/vt.go --apikey {key} (--debug) rescan {hash} {hash} ...
-go run ./bin/vt.go --apikey {key} (--debug) report 99017f6eebbac24f351415dd410d522d
-go run ./bin/vt.go --apikey {key} (--debug) scan-url {url} {url} ...
-go run ./bin/vt.go --apikey {key} (--debug) report-url www.google.com
-go run ./bin/vt.go --apikey {key} (--debug) ipaddress 90.156.201.27
-go run ./bin/vt.go --apikey {key} (--debug) domain 027.ru
-go run ./bin/vt.go --apikey {key} (--debug) --resource 99017f6eebbac24f351415dd410d522d comment "How to disinfect you from this file... #disinfect #zbot"
+go-virustotal --apikey {key} (--debug) scan {file} {file} ...
+go-virustotal --apikey {key} (--debug) rescan {hash} {hash} ...
+go-virustotal --apikey {key} (--debug) report 99017f6eebbac24f351415dd410d522d
+go-virustotal --apikey {key} (--debug) scan-url {url} {url} ...
+go-virustotal --apikey {key} (--debug) report-url www.google.com
+go-virustotal --apikey {key} (--debug) ipaddress 90.156.201.27
+go-virustotal --apikey {key} (--debug) domain 027.ru
+go-virustotal --apikey {key} (--debug) --resource 99017f6eebbac24f351415dd410d522d comment "How to disinfect you from this file... #disinfect #zbot"
 ```
 
 ## Contributions
